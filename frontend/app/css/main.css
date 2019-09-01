@@ -1,0 +1,465 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+/*-----------------
+       variables
+--------------------*/
+/*-----------------
+       colors
+--------------------*/
+/*-----------------
+       mixins
+--------------------*/
+/*-----------------
+       fonts
+--------------------*/
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #3598fb; }
+  .login-container .login-img {
+    transform: translate(0px, 70px) rotate(3deg);
+    opacity: 0;
+    animation: appear 2s forwards ease-in-out 2s; }
+
+@keyframes appear {
+  from {
+    transform: translate(0px, 70px) rotate(6deg);
+    opacity: 0; }
+  to {
+    transform: translate(0px, 0px) rotate(0deg);
+    opacity: 1; } }
+
+@keyframes appear2 {
+  from {
+    transform: translate(0px, 70px) rotate(6deg);
+    opacity: 0; }
+  to {
+    transform: translate(0px, 0px) rotate(0deg);
+    opacity: 1; } }
+  .login-container form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    transform: translate(0px, 70px) rotate(3deg);
+    opacity: 0;
+    animation: appear2 2s forwards ease-in-out 3s; }
+    .login-container form > * {
+      margin-top: 15%; }
+    .login-container form input[type="text"], .login-container form input[type="password"] {
+      width: 80%;
+      border: none;
+      border-bottom: 1px solid #fcfcfc;
+      background: transparent;
+      color: #fcfcfc;
+      padding: 3px; }
+    .login-container form ::placeholder {
+      font-size: 1.3em;
+      color: rgba(250, 250, 250, 0.8);
+      padding: 6px 0; }
+    .login-container form a {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      justify-content: center; }
+    .login-container form input[type="button"] {
+      padding: 5% 30%;
+      border-radius: 35px;
+      border: none;
+      background: #fcfcfc;
+      color: #3598fb;
+      cursor: pointer;
+      font-size: 1.4em;
+      font-weight: 600; }
+      .login-container form input[type="button"]:hover {
+        background: #efefef; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+/*-----------------
+       variables
+--------------------*/
+/*-----------------
+       colors
+--------------------*/
+/*-----------------
+       mixins
+--------------------*/
+/*-----------------
+       fonts
+--------------------*/
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.verde {
+  background: #1ac840; }
+
+.laranja {
+  background: #FA9D44; }
+
+.lilas {
+  background: #BB30E1; }
+
+.container {
+  width: 100vw;
+  height: 107vh; }
+  .container .header-padrao {
+    width: 100%;
+    height: 90px;
+    background: #3598fb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px; }
+    .sino-container {
+      position: relative; }
+      .notification {
+        width: 20px;
+        height: 20px;
+        padding: 0px 10px 0px 6px;
+        background: #FA9D44;
+        color: #fcfcfc;
+        border-radius: 50% 50%;
+        position: absolute;
+        top: -2px;
+        right: -10px;
+        text-align: center; }
+    .container .header-padrao h2 {
+      color: #fcfcfc;
+      margin-left: 32px;
+      font-size: 24px; }
+    .estrela-container {
+      display: flex;
+      width: 20%; }
+      .estrela-num {
+        width: fit-content; }
+  .container .roadmap {
+    width: 100%;
+    height: 107vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .container .roadmap .road-icons {
+      position: absolute;
+      top: 22.8%;
+      height: 107vh;
+      width: 100%; }
+    .container .roadmap .road {
+      position: absolute;
+      top: 30%; }
+    .container .roadmap .iniciante {
+      width: 100%;
+      height: fit-content;
+      padding: 6% 0;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center; }
+      h2 {
+        margin-right: 6%;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.3em;
+        font-weight: 600; }
+    .container .roadmap .road-icon_container {
+      width: 100%;
+      height: fit-content;
+      padding: 6px;
+      display: flex;
+      flex-wrap: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0 5%;
+      margin-top: 18.5%; }
+      .container .roadmap .road-icon_container .road-text_container {
+        width: 50%;
+        height: inherit; }
+        .container .roadmap .road-icon_container .road-text_container pre {
+          color: #bcbcbc; }
+        .container .roadmap .road-icon_container .road-text_container pre > span {
+          font-weight: bold; }
+      .container .roadmap .road-icon_container .circle-container {
+        width: 97px;
+        height: 97px;
+        border-radius: 50% 50%; }
+  .container .blocked {
+    width: 100%;
+    height: fit-content;
+    padding: 6% 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .container .blocked .blocked-image {
+      object-position: 12px; }
+    .container .blocked .experiente {
+      width: 50%;
+      display: flex;
+      justify-content: center; }
+    .container .blocked .blocked-container {
+      width: 100%;
+      height: 114vh;
+      position: absolute;
+      top: 5%;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      align-items: center; }
+      .container .blocked .blocked-container .blocked-text_container {
+        text-align: right;
+        width: 50%;
+        color: #afafaf; }
+        .container .blocked .blocked-container .blocked-text_container:nth-child(odd) {
+          text-align: right;
+          margin-left: 25%; }
+        .container .blocked .blocked-container .blocked-text_container:nth-child(even) {
+          text-align: left;
+          margin-right: 25%; }
+  .container footer {
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: #fcfcfc; }
+    .container footer .footer-item_container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      color: #afafaf; }
+      .container footer .footer-item_container a {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .container footer .footer-item_container a img {
+          height: 22px; }
+          .container footer .footer-item_container a img:hover, .container footer .footer-item_container a img .footer-desc {
+            color: #3598fb; }
+      .footer-desc {
+        margin-top: 6px;
+        font-size: 0.8em; }
+
+.vantagem-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+  .vantagem-container .vantagens-banner {
+    margin-top: 3%; }
+  .vantagem-container .vantagens-menu {
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid #d6d6d6;
+    align-self: flex-end;
+    justify-content: space-evenly;
+    margin: 5% 0;
+    padding-bottom: 2.5%; }
+    .vantagem-container .vantagens-menu .menu-item {
+      font-size: 0.9em;
+      color: #afafaf; }
+  .vantagem-container .filtro-container {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 3%;
+    font-size: 0.9em;
+    align-self: flex-end;
+    margin: 0 10px 0 0;
+    color: #afafaf; }
+    .vantagem-container .filtro-container .filtro {
+      display: flex; }
+      .vantagem-container .filtro-container .filtro .filtro-p {
+        margin-right: 10px; }
+  .vantagem-container .desconto-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .vantagem-container .desconto-container .desconto {
+      margin-top: 1.2%; }
+
+#container-override {
+  height: 260vh; }
+
+.container .feedback-container {
+  width: 100vw;
+  height: fit-content;
+  padding: 3%; }
+  .container .feedback-container .feedback-heading_container {
+    padding: 3%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .feedback-heading {
+      font-size: 1.4em;
+      font-weight: 600;
+      width: 100%;
+      color: #141414; }
+    .feedback-desc {
+      margin-top: 4%;
+      font-size: 0.9em;
+      color: #969696; }
+  .container .feedback-container .pontuacao {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly; }
+    .container .feedback-container .pontuacao .ponto {
+      margin: 4% 0 5% 0;
+      width: calc(100% / 6.5);
+      text-align: center;
+      padding: 4% 0;
+      border-radius: 15%; }
+  .container .feedback-container .feedback-form {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative; }
+    .container .feedback-container .feedback-form input[type="text"] {
+      width: 90%;
+      height: 120px;
+      margin: 5% auto;
+      border-radius: 15px;
+      border: 1px solid #969696; }
+    .container .feedback-container .feedback-form input[type="submit"] {
+      border: none;
+      border-radius: 15px;
+      background: #1ac840;
+      color: #fcfcfc;
+      padding: 14px;
+      width: 30%;
+      position: absolute;
+      bottom: -50px;
+      right: 15px; }
+
+.vermelho {
+  border: 1px solid red;
+  transition: 1s; }
+  .vermelho:hover {
+    background: red;
+    color: #fcfcfc; }
+
+.laranja2 {
+  border: 1px solid #FA9D44;
+  transition: 1s; }
+  .laranja2:hover {
+    background: #FA9D44;
+    color: #fcfcfc; }
+
+.amarelo {
+  border: 1px solid #ffea31;
+  transition: 1s; }
+  .amarelo:hover {
+    background: #ffea31;
+    color: #fcfcfc; }
+
+.limao {
+  border: 1px solid #7dea31;
+  transition: 1s; }
+  .limao:hover {
+    background: #7dea31;
+    color: #fcfcfc; }
+
+.verde2 {
+  border: 1px solid #1ac840;
+  transition: 1s; }
+  .verde2:hover {
+    background: #1ac840;
+    color: #fcfcfc; }
+
+.container {
+  height: 100vh; }
+  .container .feedback-heading {
+    padding: 10px 0 0 20px; }
+  .container .image-grid {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; }
+    .container .image-grid a {
+      width: 40%;
+      height: 15%;
+      margin: 3% 2%;
+      position: relative;
+      cursor: pointer; }
+      .container .image-grid a .evaluation-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px; }
+      .container .image-grid a:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+      .container .image-grid a::after {
+        content: 'Andy Silva';
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 30%;
+        border-radius: 0 0 15px 15px;
+        text-align: center;
+        background: linear-gradient(0deg, #2874c0 0%, rgba(0, 212, 255, 0.1) 59%); }
+
+.container .container-flex {
+  height: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center; }
+
+.container .qr-container {
+  text-align: center; }
+
+.qr-flex {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .qr-flex .mc-container {
+    width: 90px;
+    height: 87px;
+    border-radius: 50% 50%;
+    margin: 5% 0; }
+  .qr-flex .voltar {
+    padding: 3% 4%;
+    background: #1ac840;
+    border-radius: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer; }
+    .qr-flex .voltar .voltar-h3 {
+      text-decoration: none; }

@@ -1,0 +1,28 @@
+
+.qr-flex{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .mc-container{
+        width:90px;
+        height: 87px;
+        border-radius: 50% 50%;
+        margin: 5% 0;
+    }
+    .voltar{
+        padding: 3% 4%;
+        background: $verde;
+        border-radius: 15px;
+        position: absolute;
+        top: 15px;
+        left:15px;
+        cursor: pointer;
+        .voltar-h3{ 
+            text-decoration: none;
+        }
+    }
+}

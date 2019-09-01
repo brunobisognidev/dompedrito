@@ -1,0 +1,102 @@
+#container-override{
+    height:260vh;
+}
+.container{
+    .feedback-container{
+        width: 100vw;
+        height: fit-content;
+        padding: 3%;
+        .feedback-heading_container {
+            padding:3%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            @at-root .feedback-heading{
+                font: {
+                    size:1.4em;
+                    weight:600;
+                }
+                width: 100%;
+                color:rgb(20,20,20);
+            }
+            @at-root .feedback-desc{
+                margin-top: 4%;
+                font-size:0.9em;
+                color:darken($cinza,35%);
+            }
+        }
+        .pontuacao{
+         width: 100%;
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: space-evenly;
+         .ponto{
+             margin:4% 0 5% 0;
+             width:calc(100% / 6.5);
+             text-align: center;
+             padding:4% 0;
+             border-radius: 15%;
+            }
+        }
+        .feedback-form{
+            display: flex;
+            flex-flow: column nowrap;
+            position: relative;
+            input[type="text"]{
+                width:90%;
+                height:120px ;
+                margin: 5% auto;
+                border-radius: 15px;
+                border:1px solid darken($cinza,35%);
+            }
+            input[type="submit"]{
+                border:none;
+                border-radius: 15px;
+                background: $verde;
+                color:$branco;
+                padding:14px;
+                width:30%;
+                position: absolute;
+                bottom: -50px;
+                right: 15px;
+            }
+        }
+    }
+}
+
+.vermelho{border:1px solid red;
+    transition:1s;
+    &:hover{
+        background: red;
+        color:$branco;
+    }
+}
+.laranja2{border:1px solid $laranja;
+    transition:1s;
+    &:hover{
+        background: $laranja;
+        color:$branco;
+    }
+}
+.amarelo{border:1px solid rgb(255, 234, 49);
+    transition:1s;
+    &:hover{
+        background: rgb(255,234,49);
+        color:$branco;
+    }
+}
+.limao{border:1px solid rgb(125, 234, 49);
+    transition:1s;
+    &:hover{
+        background: rgb(125,234,49);
+        color:$branco;
+    }
+}
+.verde2{border:1px solid $verde;
+    transition:1s;
+    &:hover{
+        background: $verde;
+        color:$branco;
+    }
+}

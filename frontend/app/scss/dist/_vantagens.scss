@@ -1,0 +1,56 @@
+.vantagem-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .vantagens-banner{
+        margin-top: 3%;
+    }
+    .vantagens-menu{
+        width:90%;
+        display: flex;
+        flex-flow: row nowrap;
+        border-bottom: 1px solid darken($cinza, 10%);
+        align-self: flex-end;
+        justify-content: space-evenly;
+        margin:5% 0;
+        padding-bottom: 2.5%;
+        .menu-item{
+            font: {
+                size:0.9em;
+            }
+            
+            color:darken($cinza, 25%);
+        }
+    }
+    .filtro-container{
+        width:90%;
+        height:fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding:0 3%;
+        font-size: 0.9em;
+        align-self: flex-end;
+        margin: 0 10px 0 0;
+        color:darken($cinza, 25%);
+        .filtro{
+            display: flex;
+            .filtro-p{
+                margin-right: 10px;
+            }
+        }
+    }
+    .desconto-container{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        .desconto{
+            margin-top: 1.2%;
+        }
+
+    }
+}

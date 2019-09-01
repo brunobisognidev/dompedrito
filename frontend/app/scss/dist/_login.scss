@@ -1,0 +1,76 @@
+.login-container{
+    width:100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: $azul;
+
+    .login-img{
+        transform: translate(0px, 70px) rotate(3deg);
+        opacity: 0;
+        animation:appear 2s forwards ease-in-out 2s;
+        width: 250px;
+        object-fit: contain;
+    }
+    @keyframes appear {
+        from{transform: translate(0px, 70px) rotate(6deg);opacity: 0;}
+        to{transform: translate(0px, 0px) rotate(0deg);opacity: 1;}
+    }
+    @keyframes appear2 {
+        from{transform: translate(0px, 70px) rotate(6deg);opacity: 0;}
+        to{transform: translate(0px, 0px) rotate(0deg);opacity: 1;}
+    }
+    
+    
+    form{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 100%;
+        transform: translate(0px, 70px) rotate(3deg);
+        opacity: 0;
+        animation:appear2 2s forwards ease-in-out 3s;
+        & > *{
+            margin-top: 15%;
+        }
+        input[type="text"],input[type="password"]{
+            width:80%;
+            border:none;
+            border-bottom: 1px solid $branco;
+            background: transparent;
+            color:$branco;
+            padding:3px;
+        }
+        ::placeholder{
+            font: {
+                size:1.3em;
+            }
+            color:rgba(250,250,250, .8);
+            padding:6px 0 ;
+        }
+        a{
+            width:inherit;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+        }
+        input[type="button"]{
+            padding:5% 30%;
+            border-radius: 35px;
+            border:none;
+            background: $branco;
+            color:$azul;
+            cursor: pointer;
+            font: {
+                size:1.4em;
+                weight:600;
+            }
+            &:hover{
+                background: darken($branco, 5%);
+            }
+        }
+    }
+}

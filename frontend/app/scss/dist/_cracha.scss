@@ -1,0 +1,12 @@
+.container{
+    .container-flex{
+        height: 80%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .qr-container{
+        text-align: center;
+    }
+}
