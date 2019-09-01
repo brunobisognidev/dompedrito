@@ -4,12 +4,10 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp": "^4.0.2"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -31,7 +31,9 @@
   .login-container .login-img {
     transform: translate(0px, 70px) rotate(3deg);
     opacity: 0;
-    animation: appear 2s forwards ease-in-out 2s; }
+    animation: appear 2s forwards ease-in-out 2s;
+    width: 250px;
+    object-fit: contain; }
 
 @keyframes appear {
   from {
@@ -112,13 +114,22 @@
   font-weight: 400; }
 
 .verde {
-  background: #1ac840; }
+  background: #1ac840;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .laranja {
-  background: #FA9D44; }
+  background: #FA9D44;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .lilas {
-  background: #BB30E1; }
+  background: #BB30E1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .container {
   width: 100vw;

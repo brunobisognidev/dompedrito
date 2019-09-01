@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Dashboard</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dist/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="../dist/modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="../dist/modules/weather-icon/css/weather-icons.min.css">
+  <link rel="stylesheet" href="../dist/modules/weather-icon/css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="../dist/modules/summernote/summernote-bs4.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../dist/css/style.css">
+  <link rel="stylesheet" href="../dist/css/components.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Buscar" aria-label="Search" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+            <div class="search-result">
+              <div class="search-header">
+                Histórico
+              </div>
+              <div class="search-item">
+                <a href="#">Zara</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-item">
+                <a href="#">Cacau Show</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-item">
+                <a href="#">Assumpta Dion</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-header">
+                Result
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <img class="mr-3 rounded" width="30" src="../dist/img/products/product-3-50.png" alt="product">
+                  oPhone S9 Limited Edition
+                </a>
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <img class="mr-3 rounded" width="30" src="../dist/img/products/product-2-50.png" alt="product">
+                  Drone X2 New Gen-7
+                </a>
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <img class="mr-3 rounded" width="30" src="../dist/img/products/product-1-50.png" alt="product">
+                  Headphone Blitz
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right"> <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="../dist/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Olá Gilberto</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Gestor</div>
+              <a href="features-profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Perfil
+              </a>
+              <a href="features-activities.html" class="dropdown-item has-icon">
+                <i class="fas fa-bolt"></i> Atividades
+              </a>
+              <a href="features-settings.html" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Configuração
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="dashboard-ecommerce.html">DomPedrito</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="dashboard-ecommerce.html">Dp</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Dashboard</li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+              <ul class="dropdown-menu">
+                <li class=active><a class="nav-link" href="dashboard-general.html">Dashboard Geral</a></li>
+                <li><a class="nav-link" href="dashboard-ecommerce.html">Dashboard Analítico</a></li>
+                <li><a class="nav-link" href="components-table.html">Cadastros</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Dashboard</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <div class="card-icon bg-primary">
+                  <i class="far fa-user"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Acessos a Liberar</h4>
+                  </div>
+                  <div class="card-body">
+                    10
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <div class="card-icon bg-danger">
+                  <i class="far fa-newspaper"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Usuários em fila</h4>
+                  </div>
+                  <div class="card-body">
+                    42
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <div class="card-icon bg-warning">
+                  <i class="far fa-file"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Circulates Pendentes</h4>
+                  </div>
+                  <div class="card-body">
+                    1,201
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <div class="card-icon bg-success">
+                  <i class="fas fa-circle"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Usuários Online</h4>
+                  </div>
+                  <div class="card-body">
+                    47
+                  </div>
+                </div>
+              </div>
+            </div>                  
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Estatísticas</h4>
+                  <div class="card-header-action">
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-primary">Semanal</a>
+                      <a href="#" class="btn">Mensal</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <canvas id="myChart" height="182"></canvas>
+                  <div class="statistic-details mt-sm-4">
+                    <div class="statistic-details-item">
+                      <span class="text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 7%</span>
+                      <div class="detail-value">R$243</div>
+                      <div class="detail-name">Vendas Totais</div>
+                    </div>
+                    <div class="statistic-details-item">
+                      <span class="text-muted"><span class="text-danger"><i class="fas fa-caret-down"></i></span> 23%</span>
+                      <div class="detail-value">R$2,902</div>
+                      <div class="detail-name">Vendas da semana</div>
+                    </div>
+                    <div class="statistic-details-item">
+                      <span class="text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span>9%</span>
+                      <div class="detail-value">R$12,821</div>
+                      <div class="detail-name">Vendas do mês</div>
+                    </div>
+                    <div class="statistic-details-item">
+                      <span class="text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 19%</span>
+                      <div class="detail-value">R$92,142</div>
+                      <div class="detail-name">Vendas desse ano</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Ultimos cadastros</h4>
+                </div>
+                <div class="card-body">             
+                  <ul class="list-unstyled list-unstyled-border">
+                    <li class="media">
+                      <img class="mr-3 rounded-circle" width="50" src="../dist/img/avatar/avatar-2.png" alt="avatar">
+                      <div class="media-body">
+                        <div class="float-right">12m</div>
+                        <div class="media-title">Caito Maia</div>
+                        <span class="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <img class="mr-3 rounded-circle" width="50" src="../dist/img/avatar/avatar-3.png" alt="avatar">
+                      <div class="media-body">
+                        <div class="float-right">17m</div>
+                        <div class="media-title">Benedito Vanoil</div>
+                        <span class="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <img class="mr-3 rounded-circle" width="50" src="../dist/img/avatar/avatar-4.png" alt="avatar">
+                      <div class="media-body">
+                        <div class="float-right">21m</div>
+                        <div class="media-title">Shania Twain</div>
+                        <span class="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="text-center pt-1 pb-1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>Visitantes</h4>
+                </div>
+                <div class="card-body">
+                  <div id="visitorMap"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Status dessa semana</h4>
+                  <div class="card-header-action">
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">Filtrar</a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item has-icon"><i class="far fa-circle"></i> Bloco A</a>
+                        <a href="#" class="dropdown-item has-icon"><i class="far fa-circle"></i> Bloco B</a>
+                        <a href="#" class="dropdown-item has-icon"><i class="far fa-circle"></i> Bloco C</a>
+                    </div>
+                  </div>
+                </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="../dist/modules/jquery.min.js"></script>
+  <script src="../dist/modules/popper.js"></script>
+  <script src="../dist/modules/tooltip.js"></script>
+  <script src="../dist/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../dist/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="../dist/modules/moment.min.js"></script>
+  <script src="../dist/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="../dist/modules/simple-weather/jquery.simpleWeather.min.js"></script>
+  <script src="../dist/modules/chart.min.js"></script>
+  <script src="../dist/modules/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="../dist/modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="../dist/modules/summernote/summernote-bs4.js"></script>
+  <script src="../dist/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="../dist/js/page/dashboard-general.js"></script>
+  
+  <!-- Template JS File -->
+  <script src="../dist/js/scripts.js"></script>
+  <script src="../dist/js/custom.js"></script>
+</body>
+</html>

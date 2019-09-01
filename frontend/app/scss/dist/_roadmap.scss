@@ -7,9 +7,15 @@
     }
 }
 
-.verde{background: $verde;}
-.laranja{background: $laranja;}
-.lilas{background: $lilas;}
+.verde{background: $verde ;display: flex;
+align-items: center;
+justify-content: center}
+.laranja{background: $laranja;display: flex;
+align-items: center;
+justify-content: center}
+.lilas{background: $lilas;display: flex;
+align-items: center;
+justify-content: center}
 
 
 
